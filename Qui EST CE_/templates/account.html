@@ -1,0 +1,11 @@
+{% extends "Firstpage.html" %}
+{% block content %}
+    <div class="content-section">
+      <div class="media">
+        <div class="media-body">
+          <h2 class="account-heading">{{ session['username'] }}</h2>
+			{{content}}
+        </div>
+      </div>
+    </div>
+{% endblock content %}

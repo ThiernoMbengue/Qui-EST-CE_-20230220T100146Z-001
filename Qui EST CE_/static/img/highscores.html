@@ -1,0 +1,26 @@
+
+{% extends "Firstpage.html" %}
+{% block content %}
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+    <h3>
+       Tableau des highscores par niveau 
+    </h3>
+    <table style="width: 100%;">
+        <tr><th>Pseudo</th><th>Niveau 1</th><th>Niveau 2</th><th>Niveau 3</th></tr>
+        {{high_score_by_lvl}}
+    </table>
+
+<br/>
+
+<h3>Tableau des highscores par jour</h3>
+<table style="width: 100%;">
+    <tr><th>Pseudo</th><th>Date du jour</th><th>HighScore</th></tr>
+    {{high_score_by_date}}
+</table>
+{% endblock content%}

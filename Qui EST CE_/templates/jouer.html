@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Qui EST CE?</title>
+    <link rel="stylesheet" href="../static/css/styles2.css" />
+    <script src="/static/js/test.js"></script>
+
+</head>
+<header>
+    <h1>QUI EST CE?</h1>
+</header>
+
+<body>
+    <div class="reponse">
+        <form action="/getPartie" method="post">
+            <label for="question">Choisissez Votre Question:</label>
+            <select id="question" name="question">
+                {{question}}
+            </select>
+            <label for="reponse">Repondez par Oui ou Non:</label>
+            <select id="reponseJ" name="reponseJ">
+                {{reponseJ}}
+            </select>
+            <input id="bouton" type="submit" value="Valider Votre Choix" />
+        </form>
+        <form action="/getPartie" method="post">
+            <label for="reponse">Reponse à la question posé:</label>
+            <select id="reponserobot" name="reponserobot">
+                {{reponserobot}}
+            </select>
+        </form>
+
+        <form action="/getPartie" method="post">
+            <label for="questionrobot">Question du Robot:</label>
+            <select id="questionrobot" name="questionrobot">
+                {{questionrobot}}
+            </select>
+        </form> 
+    </div>
+    <pre>
+    </pre>
+    <pre>
+    </pre>
+    <br />
+    <br />
+    <br />
+    <br />
+    <pre>
+    </pre>
+    <pre>
+    </pre>
+    {{grille}}
+    
+
+</body>
+
+</html>

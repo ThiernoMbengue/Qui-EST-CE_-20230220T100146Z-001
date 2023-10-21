@@ -1,0 +1,7 @@
+{% extends "Firstpage.html" %}
+{% block content %}
+<div class = "h2_p">
+     <h2> {{h2}} {{session['username'] if session['username'] else ""}} </h2> <br>
+	<p> {{p}} </p>
+</div>
+{% endblock content%}
